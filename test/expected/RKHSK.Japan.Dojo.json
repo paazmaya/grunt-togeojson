@@ -1,0 +1,188 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.744142,
+                    35.875243,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "川口支部",
+                "description": "埼玉県川口市東川口\n拓心観道場\n日曜日10:00～12:00\n水曜日19:30～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.515173,
+                    35.091895,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "小島支部",
+                "description": "静岡県静岡市清水区小島町619\n清水小島小学校体育館\n月曜日19:00～20:30\n水曜日19:00～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.592809,
+                    35.254755,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "富士宮支部",
+                "description": "静岡県富士宮市外神\n源流館道場\n土曜日19:00～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.36708960793,
+                    34.99144744286773,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "静岡支部",
+                "description": "静岡市葵区平和町2-2-1\n静岡市立籠上中学校　柔道場または剣道場\n火曜日19:00～21:00（柔道場）\n木曜日19:00～21:00（剣道場）",
+                "balloon_text": "<table width =\"250\"><tr><td colspan=\"2\"><font size=\"+1\"><b><a href=\"http://maps.google.com/maps?q=%E9%9D%99%E5%B2%A1%E5%B8%82%E8%91%B5%E5%8C%BA%E5%B9%B3%E5%92%8C%E7%94%BA+%E9%9D%99%E5%B2%A1%E5%B8%82%E7%AB%8B%E7%B1%A0%E4%B8%8A%E4%B8%AD%E5%AD%A6%E6%A0%A1&sll=34.9891,138.371&sspn=0.0335353,0.048892&ie=UTF8&v=2.2&cv=5.1.3509.4636&hl=en&latlng=5281741674771993030&ei=K_HyStaDE9ONsAa_x91i&cd=1\">$[name]</a></b></font><br/><font color=\"#808080\"></font></td></tr><tr><td>Japan<br/>静岡県静岡市葵区紺屋町3-10中島屋ビル2F<br/>054-275-3050<br/><a href=\"http://kodate.home4u.jp/detail.html?id=360664&amp;tab=1\" style=\"color:#008000\">home4u.jp</a></td><td><a href=\"/maps?q=%E9%9D%99%E5%B2%A1%E5%B8%82%E8%91%B5%E5%8C%BA%E5%B9%B3%E5%92%8C%E7%94%BA+%E9%9D%99%E5%B2%A1%E5%B8%82%E7%AB%8B%E7%B1%A0%E4%B8%8A%E4%B8%AD%E5%AD%A6%E6%A0%A1&amp;sll=34.9891,138.371&amp;sspn=0.0335353,0.048892&amp;ie=UTF8&amp;v=2.2&amp;cv=5.1.3509.4636&amp;hl=en&amp;latlng=5281741674771993030&amp;ei=K_HyStaDE9ONsAa_x91i&amp;cd=1&amp;dtab=5&amp;ct=rp_photo&amp;usq=%E8%91%B5%E5%8C%BA%E5%B9%B3%E5%92%8C%E7%94%BA+%E9%9D%99%E5%B2%A1%E5%B8%82%E7%AB%8B%E7%B1%A0%E4%B8%8A%E4%B8%AD%E5%AD%A6%E6%A0%A1&amp;cad=HOME%26%2339%3BS&amp;geocode=Fd-lFQIdgpY_CA\"><img src=\"http://base.googlehosted.com/base_media?q=maps:image.homes.co.jp/smallimg/image.php%3Ffile%3D%252Fdata%252F3550358%252Fgyousha%252Fimage%252F1.jpg&amp;size=3&amp;hl=en\"/></a></td></tr></table><br/><br/>&#160;&#160;$[geDirections]",
+                "contents": "すみしん不動産株式会社 静岡センター+静岡県静岡市葵区 - 売買+不動産+不動産代理+不動産仲介",
+                "city": "静岡県静岡市葵区紺屋町3-10中島屋ビル2F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.505428,
+                    35.731303,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "小平支部",
+                "description": "東京都小平市花小金井5-464\n花小金井武道館　第１道場\n日曜日11:30～13:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.343254,
+                    33.678209,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "和歌山県支部",
+                "description": "和歌山県西牟婁郡白浜町湯崎\n白浜道場\n土曜日20:00～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.483959,
+                    35.008453,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "春清館支部",
+                "description": "静岡県静岡市清水区岡町\n春清館道場\n土曜日19:00～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.489478,
+                    35.332474,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "藤沢支部",
+                "description": "神奈川県藤沢市鵠沼東8-2\n藤沢市秩父宮記念体育館\n木曜日19:00～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.185385,
+                    34.214714,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "和歌山県支部",
+                "description": "和歌山県和歌山市手平\n月曜日19:30～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.182193,
+                    34.238927,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "和歌山県支部",
+                "description": "和歌山県和歌山市中之島\n金谷道場　空心館\n火曜日20:00～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.485569,
+                    35.039121,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "清水支部",
+                "description": "静岡県静岡市清水区西久保125-1\n清水袖師中学校格技場\n金曜日19:00～21:00"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.706112,
+                    35.657206,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "総本部",
+                "description": "東京都渋谷区渋谷3-4-7\n豊栄稲荷神社・蔵修館道場内\n火曜日18:30～20:30"
+            }
+        }
+    ]
+}
