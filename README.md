@@ -2,8 +2,12 @@
 
 > Grunt task for converting KML and GPX files to GeoJSON
 
+[![Build Status](https://travis-ci.org/paazmaya/grunt-togeojson.png?branch=master)](https://travis-ci.org/paazmaya/grunt-togeojson)
+
 ## Getting Started
-This plugin requires Grunt `~0.4.1`
+
+This plugin requires [Grunt](http://gruntjs.com/) `~0.4.1` 
+and [toGeoJSON](https://github.com/mapbox/togeojson) `~0.3.0`.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to 
 check out the [Getting Started](http://gruntjs.com/getting-started) 
@@ -29,16 +33,18 @@ grunt.loadNpmTasks('grunt-togeojson');
 In your project's Gruntfile, add a section named `togeojson` to the
 data object passed into `grunt.initConfig()`.
 
-Since this plugin is not a multi task, you can place the files 
-directly in the base object.
+Configure the files list as [decribed in the multi task
+section of Grunt documentation](http://gruntjs.com/creating-tasks#multi-tasks).
 
 ```js
 grunt.initConfig({
   togeojson: {
-    files: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
+    maps: {
+      files: {
+        // Target-specific file lists and/or options go here.
+      }
+    }
+  }
 })
 ```
 
@@ -46,29 +52,15 @@ grunt.initConfig({
 
 There are no options.
 
-### Usage Examples
+Conversion will use the same basename of the source file for the 
+destination file.
 
-#### Default Options
-In this example, the default options are used to do something with
-whatever. 
-So if the `testing` file has the content `Testing` and the `123` 
-file had the content `1 2 3`, the generated result would be 
-`Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  togeojson: {
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-})
-```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing 
 coding style. Add unit tests for any new or changed functionality. 
 Lint and test your code using [Grunt](http://gruntjs.com/).
+
 
 ## Release History
 _(Nothing yet)_
