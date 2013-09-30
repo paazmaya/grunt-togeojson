@@ -10,32 +10,22 @@
 
 module.exports = function(grunt) {
 
-  // Please see the Grunt documentation for more information regarding task
-  // creation: http://gruntjs.com/creating-tasks
+  var togeojson = require('togeojson'),
+    jsdom = require('jsdom').jsdom;
+  
+  grunt.registerMultiTask('togeojson', 'Convert KML and GPX files to GeoJSON', function() {
 
-  grunt.registerTask('togeojson', function() {
-
-    // Iterate over all specified file groups.
     this.files.forEach(function(file) {
-      // Concat specified files.
-      var src = file.src.filter(function(filepath) {
-        // Warn on and remove invalid source files (if nonull was set).
-        if (!grunt.file.exists(filepath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
-          return false;
-        } else {
-          return true;
-        }
-      }).map(function(filepath) {
-        // Read file source.
-        return grunt.file.read(filepath);
-      }).join(grunt.util.normalizelf(options.separator));
+      
+      var kml = grunt.file.read(file.src);
+      var dom = jsdom(kml);
+      var geo = togeojson.kml(dom);
 
-      // Write the destination file.
-      grunt.file.write(f.dest, src);
+      var data = JSON.stringify(geo, { styles: true });
 
-      // Print a success message.
-      grunt.log.writeln('File "' + f.dest + '" created.');
+      grunt.file.write(file.dest, data);
+
+      grunt.log.writeln('File "' + file.dest + '" created.');
     });
   });
 

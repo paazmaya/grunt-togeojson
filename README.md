@@ -6,8 +6,9 @@
 
 ## Getting Started
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4.1` 
-and [toGeoJSON](https://github.com/mapbox/togeojson) `~0.3.0`.
+This plugin requires [Grunt](http://gruntjs.com/) `~0.4.1`,
+and [toGeoJSON](https://github.com/mapbox/togeojson) `~0.3.0`
+and [jsdom](https://github.com/tmpvar/jsdom) `~0.8.6` .
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to 
 check out the [Getting Started](http://gruntjs.com/getting-started) 
