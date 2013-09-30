@@ -16,16 +16,19 @@ module.exports = function(grunt) {
   grunt.registerMultiTask('togeojson', 'Convert KML and GPX files to GeoJSON', function() {
 
     this.files.forEach(function(file) {
-      
-      var kml = grunt.file.read(file.src);
-      var dom = jsdom(kml);
-      var geo = togeojson.kml(dom);
-
-      var data = JSON.stringify(geo, { styles: true });
-
-      grunt.file.write(file.dest, data);
-
-      grunt.log.writeln('File "' + file.dest + '" created.');
+      file.src.forEach(function(src) {
+        var method = src.match(/\.gpx$/i) ? 'gpx' : 'kml';
+        
+        var original = grunt.file.read(src);
+        var dom = jsdom(original);
+        var geo = togeojson[method](dom);
+  
+        var data = JSON.stringify(geo, null, "\t");
+  
+        grunt.file.write(file.dest, data);
+  
+        grunt.log.writeln('File "' + file.dest + '" created.');
+      });
     });
   });
 

@@ -30,8 +30,10 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     togeojson: {
-      files: {
-        'tmp/Naginata.json': ['test/fixtures/Naginata.kml'],
+      naginata: {
+        files: {
+          'tmp/Naginata.json': ['test/fixtures/Naginata.kml'],
+        }
       }
     },
 

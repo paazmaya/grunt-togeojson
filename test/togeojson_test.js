@@ -27,7 +27,7 @@ exports.togeojson = {
     // setup here if necessary
     done();
   },
-  default_options: function(test) {
+  naginata: function(test) {
     test.expect(1);
 
     var actual = grunt.file.read('tmp/Naginata.json');
