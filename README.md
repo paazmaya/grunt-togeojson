@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/paazmaya/grunt-togeojson.png?branch=master)](https://travis-ci.org/paazmaya/grunt-togeojson)
 
+[![Dependency Status](https://gemnasium.com/paazmaya/grunt-togeojson.png)](https://gemnasium.com/paazmaya/grunt-togeojson)
+
 ## Getting Started
 
 This plugin requires [Grunt](http://gruntjs.com/) `~0.4.1`,
@@ -65,5 +67,5 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
-* 2013-09-30    v0.1.0    Initial release
+ * 2013-09-30    v0.1.0    Initial release
 
