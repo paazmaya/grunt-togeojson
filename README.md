@@ -67,5 +67,6 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
+ * 2013-10-12    v0.1.1    Coverage via karma, dependency status via Gemnasium
  * 2013-09-30    v0.1.0    Initial release
 
