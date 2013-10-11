@@ -11,6 +11,12 @@
   "eqnull": true,
   "node": true,
   "strict": true,
+  "globalstrict": true,
   "unused": true,
-  "indent": 2
+  "indent": 2,
+  "globals": {
+    "require": true,
+    "exports": true,
+    "module": true
+  }
 }
