@@ -15,6 +15,7 @@ module.exports = function(grunt) {
     jshint: {
       all: [
         'Gruntfile.js',
+        'karma.conf.js',
         'tasks/*.js',
         '<%= nodeunit.tests %>'
       ],

@@ -1,9 +1,10 @@
 module.exports = function(config) {
+  'use strict';
   config.set({
     basePath: '',
     frameworks: ['nodeunit'],
     files: [
-      'tasks/*.js'
+      'tasks/*.js',
       'test/*_test.js'
     ],
     browsers: ['PhantomJS'],

@@ -23,11 +23,11 @@ module.exports = function(grunt) {
         var dom = jsdom(original);
         var geo = togeojson[method](dom);
   
-        var data = JSON.stringify(geo, null, "\t");
+        var data = JSON.stringify(geo, null, '\t');
   
         grunt.file.write(file.dest, data);
   
-        grunt.log.writeln('File "' + file.dest + '" created.');
+        grunt.log.writeln('File \'' + file.dest + '\' created.');
       });
     });
   });
