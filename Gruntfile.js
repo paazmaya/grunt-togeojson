@@ -48,6 +48,13 @@ module.exports = function(grunt) {
       coverage: {
         configFile: 'karma.conf.js'
       }
+    },
+    
+    // Coverage data to coveralls.io
+    coveralls: {
+      options: {
+        coverage_dir: 'coverage'
+      }
     }
 
   });
@@ -62,12 +69,13 @@ module.exports = function(grunt) {
   
   // Code coverage
   grunt.loadNpmTasks('grunt-karma');
+  grunt.loadNpmTasks('grunt-karma-coveralls');
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit', 'karma']);
+  grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit']);
 
   // By default, lint and run all tests.
-  grunt.registerTask('default', ['jshint', 'test']);
+  grunt.registerTask('default', ['jshint', 'test', 'karma']);
 
 };
