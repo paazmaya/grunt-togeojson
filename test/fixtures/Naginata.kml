@@ -89,10 +89,7 @@
 		<open>1</open>
 		<Placemark>
 			<name>神戸市立スポーツ施設中央体育館</name>
-			<description>神戸市立スポーツ施設中央体育館
-Japan, 〒650-0017 兵庫県神戸市中央区楠町４丁目１−１
-+81 78-341-7971 ‎
-http://kobecg.jp/</description>
+			<description>神戸市立スポーツ施設中央体育館</description>
 			<LookAt>
 				<longitude>135.1745206488981</longitude>
 				<latitude>34.68241825178806</latitude>
@@ -111,8 +108,7 @@ http://kobecg.jp/</description>
 		</Placemark>
 		<Placemark>
 			<name>Himeji Budokan 姫路武道館</name>
-			<description>http://www.flickr.com/photos/paazio/4618377267/
-兵庫県姫路市田寺１丁目１−１５</description>
+			<description>兵庫県姫路市田寺１丁目１−１５</description>
 			<LookAt>
 				<longitude>134.6714900996314</longitude>
 				<latitude>34.85405779197816</latitude>
@@ -131,8 +127,7 @@ http://kobecg.jp/</description>
 		</Placemark>
 		<Placemark>
 			<name>Himeji Sports House 姫路市立総合スポーツ会館</name>
-			<description>兵庫県姫路市中地４５３
-http://sports.jibasan.or.jp/sisetu/spokan/main.htm</description>
+			<description>兵庫県姫路市中地４５３</description>
 			<LookAt>
 				<longitude>134.6675921616431</longitude>
 				<latitude>34.82020585879197</latitude>
@@ -151,8 +146,7 @@ http://sports.jibasan.or.jp/sisetu/spokan/main.htm</description>
 		</Placemark>
 		<Placemark>
 			<name>Hyogo Prefectual Budokan 兵庫県立武道館</name>
-			<description>兵庫県姫路市西延末５０４
-http://www.hyogokenritsu-budokan.jp/</description>
+			<description>兵庫県姫路市西延末５０４</description>
 			<LookAt>
 				<longitude>134.6751816622101</longitude>
 				<latitude>34.81953057639583</latitude>
@@ -171,13 +165,7 @@ http://www.hyogokenritsu-budokan.jp/</description>
 		</Placemark>
 		<Placemark>
 			<name>岐南町総合体育館 2011-04-22</name>
-			<description>第52回 都道府県対抗なぎなた大会
-岐南町総合体育館
-岐阜県羽島郡岐南町平成７丁目４７番地
-試合競技　９：００～１２：００（３回戦より）
-異種試合　１２：００～１２：２５
-閉会式　　１２：３５～１３：１５
-http://www.town.ginan.gifu.jp/kokutai/home/riha/riha1.html</description>
+			<description>第52回 都道府県対抗なぎなた大会</description>
 			<LookAt>
 				<longitude>136.7800615561946</longitude>
 				<latitude>35.38245769239058</latitude>
