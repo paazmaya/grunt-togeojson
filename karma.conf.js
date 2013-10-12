@@ -4,6 +4,8 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['nodeunit'],
     files: [
+      'node_modules/karma-nodeunit/lib/nodeunit.js',
+      'node_modules/karma-nodeunit/lib/adapter.js',
       'tasks/*.js',
       'test/*_test.js'
     ],

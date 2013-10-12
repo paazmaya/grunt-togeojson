@@ -3,7 +3,6 @@
 > Grunt task for converting KML and GPX files to GeoJSON
 
 [![Build Status](https://travis-ci.org/paazmaya/grunt-togeojson.png?branch=master)](https://travis-ci.org/paazmaya/grunt-togeojson)
-
 [![Dependency Status](https://gemnasium.com/paazmaya/grunt-togeojson.png)](https://gemnasium.com/paazmaya/grunt-togeojson)
 
 ## Getting Started

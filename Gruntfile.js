@@ -45,6 +45,9 @@ module.exports = function(grunt) {
     
     // Code coverage
     karma: {
+      coverage: {
+        configFile: 'karma.conf.js'
+      }
     }
 
   });
@@ -62,7 +65,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit', 'karma']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
