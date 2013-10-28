@@ -70,3 +70,7 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
  * 2013-10-12   v0.1.1   Coverage via karma, dependency status via Gemnasium
  * 2013-09-30   v0.1.0   Initial release
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-togeojson/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
