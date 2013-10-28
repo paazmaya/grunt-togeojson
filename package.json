@@ -42,7 +42,8 @@
     "karma-nodeunit": "~0.1.0",
     "karma-coverage": "~0.1.0",
     "karma": "~0.10.2",
-    "grunt-karma-coveralls": "~2.0.2"
+    "grunt-karma-coveralls": "~2.0.2",
+    "matchdep": "~0.3.0"
   },
   "peerDependencies": {
     "grunt": "~0.4.1"
