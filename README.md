@@ -3,8 +3,10 @@
 > Grunt task for converting KML and GPX files to GeoJSON
 
 [![Build Status](https://travis-ci.org/paazmaya/grunt-togeojson.png?branch=master)](https://travis-ci.org/paazmaya/grunt-togeojson)
+[![Code Climate](https://codeclimate.com/github/paazmaya/grunt-togeojson.png)](https://codeclimate.com/github/paazmaya/grunt-togeojson)
 [![Dependency Status](https://gemnasium.com/paazmaya/grunt-togeojson.png)](https://gemnasium.com/paazmaya/grunt-togeojson)
 [![Coverage Status](https://coveralls.io/repos/paazmaya/grunt-togeojson/badge.png)](https://coveralls.io/r/paazmaya/grunt-togeojson)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-togeojson/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## Getting Started
 
@@ -72,5 +74,4 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-togeojson/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
