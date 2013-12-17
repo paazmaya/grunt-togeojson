@@ -63,6 +63,7 @@ destination file.
 
 
 ## Contributing
+
 In lieu of a formal styleguide, take care to maintain the existing 
 coding style. Add unit tests for any new or changed functionality. 
 Lint and test your code using [Grunt](http://gruntjs.com/).
@@ -74,5 +75,8 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
  * 2013-09-30   v0.1.0   Initial release
 
 
+## License
 
+Copyright (c) 2013 Juga Paazmaya <olavic@gmail.com>
 
+Licensed under the [MIT license](LICENSE-MIT).
