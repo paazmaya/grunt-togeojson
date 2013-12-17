@@ -7,6 +7,7 @@
 [![Dependency Status](https://gemnasium.com/paazmaya/grunt-togeojson.png)](https://gemnasium.com/paazmaya/grunt-togeojson)
 [![Coverage Status](https://coveralls.io/repos/paazmaya/grunt-togeojson/badge.png)](https://coveralls.io/r/paazmaya/grunt-togeojson)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-togeojson/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## Getting Started
 
