@@ -12,16 +12,16 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    jshint: {
-      all: [
+    eslint: {
+      options: {
+        config: 'eslint.json'
+      },
+      target: [
         'Gruntfile.js',
         'karma.conf.js',
         'tasks/*.js',
         '<%= nodeunit.tests %>'
-      ],
-      options: {
-        jshintrc: '.jshintrc'
-      }
+      ]
     },
 
     // Before generating any new files, remove any previously-created files.
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     togeojson: {
       naginata: {
         files: {
-          'tmp/Naginata.json': ['test/fixtures/Naginata.kml'],
+          'tmp/Naginata.json': ['test/fixtures/Naginata.kml']
         }
       }
     },
@@ -64,16 +64,12 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.  
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  
-  // Code coverage
-  grunt.loadNpmTasks('grunt-karma');
-  grunt.loadNpmTasks('grunt-karma-coveralls');
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
   grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit']);
 
   // By default, lint and run all tests.
-  grunt.registerTask('default', ['jshint', 'test', 'karma']);
+  grunt.registerTask('default', ['eslint', 'test', 'karma']);
 
 };

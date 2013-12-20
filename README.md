@@ -11,7 +11,7 @@
 
 ## Getting Started
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4.1`,
+This plugin requires [Grunt](http://gruntjs.com/) `~0.4.2`,
 and [toGeoJSON](https://github.com/mapbox/togeojson) `~0.3.0`
 and [jsdom](https://github.com/tmpvar/jsdom) `~0.8.6` .
 
