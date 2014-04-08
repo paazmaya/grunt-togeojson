@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "grunt": "^0.4",
+    "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.5",
     "grunt-contrib-nodeunit": "^0.3",
     "grunt-eslint": "^0.3",
