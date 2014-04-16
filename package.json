@@ -34,8 +34,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "togeojson": "^0.5",
-    "jsdom": "^0.8",
+    "togeojson": "^0.7",
+    "jsdom": "^0.10",
     "coveralls": "^2.7"
   },
   "devDependencies": {
@@ -43,11 +43,11 @@
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.5",
     "grunt-contrib-nodeunit": "^0.3",
-    "grunt-eslint": "^0.3",
-    "grunt-karma": "^0.6",
+    "grunt-eslint": "^0.4",
+    "grunt-karma": "^0.8",
     "grunt-karma-coveralls": "^2.0",
-    "karma": "^0.10",
-    "karma-coverage": "^0.1",
+    "karma": "^0.12",
+    "karma-coverage": "^0.2",
     "karma-nodeunit": "^0.1",
     "matchdep": "^0.3"
   },
