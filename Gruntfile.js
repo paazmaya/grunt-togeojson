@@ -61,7 +61,7 @@ module.exports = function(grunt) {
   
   grunt.loadTasks('tasks');
 
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  require('jit-grunt')(grunt);
 
   grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit']);
 
