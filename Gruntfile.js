@@ -1,11 +1,10 @@
-/*
+/**
  * grunt-togeojson
  * https://github.com/paazmaya/grunt-togeojson
  *
- * Copyright (c) 2013 Juga Paazmaya
+ * Copyright (c) Juga Paazmaya <olavic@gmail.com>
  * Licensed under the MIT license.
  */
-
 'use strict';
 
 module.exports = function(grunt) {
@@ -14,7 +13,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     eslint: {
       options: {
-        config: 'eslint.json'
+        config: 'eslint.json',
+        format: 'stylish'
       },
       target: [
         'Gruntfile.js',
@@ -58,18 +58,13 @@ module.exports = function(grunt) {
     }
 
   });
-
-  // Actually load this plugin's task(s).
+  
   grunt.loadTasks('tasks');
 
-  // These plugins provide necessary tasks.  
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-  // Whenever the "test" task is run, first clean the "tmp" dir, then run this
-  // plugin's task(s), then test the result.
   grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit']);
 
-  // By default, lint and run all tests.
   grunt.registerTask('default', ['eslint', 'test', 'karma']);
 
 };
