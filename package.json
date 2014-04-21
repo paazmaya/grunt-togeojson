@@ -36,7 +36,7 @@
   "dependencies": {
     "togeojson": "^0.7",
     "jsdom": "^0.10",
-    "coveralls": "^2.7"
+    "coveralls": "^2.10"
   },
   "devDependencies": {
     "grunt": "^0.4",
@@ -45,7 +45,7 @@
     "grunt-contrib-nodeunit": "^0.3",
     "grunt-eslint": "^0.4",
     "grunt-karma": "^0.8",
-    "grunt-karma-coveralls": "^2.0",
+    "grunt-karma-coveralls": "^2.4",
     "karma": "^0.12",
     "karma-coverage": "^0.2",
     "karma-nodeunit": "^0.1",
