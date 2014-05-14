@@ -49,7 +49,7 @@
     "karma": "^0.12",
     "karma-coverage": "^0.2",
     "karma-nodeunit": "^0.1",
-    "jit-grunt": "^0.5",
+    "jit-grunt": "^0.6",
     "time-grunt": "^0.3"
   },
   "peerDependencies": {
