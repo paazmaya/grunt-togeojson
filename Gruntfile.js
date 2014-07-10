@@ -43,14 +43,14 @@ module.exports = function gruntConf(grunt) {
     nodeunit: {
       tests: ['test/*_test.js']
     },
-    
+
     // Code coverage
     karma: {
       coverage: {
         configFile: 'karma.conf.js'
       }
     },
-    
+
     // Coverage data to coveralls.io
     coveralls: {
       options: {
@@ -59,7 +59,7 @@ module.exports = function gruntConf(grunt) {
     }
 
   });
-  
+
   grunt.loadTasks('tasks');
 
   require('jit-grunt')(grunt);

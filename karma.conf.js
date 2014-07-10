@@ -1,5 +1,14 @@
-module.exports = function(config) {
-  'use strict';
+/**
+ * grunt-togeojson
+ * https://github.com/paazmaya/grunt-togeojson
+ *
+ * Copyright (c) Juga Paazmaya
+ * Licensed under the MIT license.
+ */
+
+'use strict';
+
+module.exports = function karmaConf(config) {
   config.set({
     basePath: '',
     frameworks: ['nodeunit'],
