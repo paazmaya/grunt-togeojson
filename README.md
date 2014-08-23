@@ -11,9 +11,9 @@
 
 ## Getting Started
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4.2`,
-and [toGeoJSON](https://github.com/mapbox/togeojson) `~0.3.0`
-and [jsdom](https://github.com/tmpvar/jsdom) `~0.8.6` .
+This plugin requires [Grunt](http://gruntjs.com/) `~0.4`,
+and [toGeoJSON](https://github.com/mapbox/togeojson) `~0.3`
+and [jsdom](https://github.com/tmpvar/jsdom) `~0.8` .
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to 
 check out the [Getting Started](http://gruntjs.com/getting-started) 
@@ -39,8 +39,8 @@ grunt.loadNpmTasks('grunt-togeojson');
 In your project's Gruntfile, add a section named `togeojson` to the
 data object passed into `grunt.initConfig()`.
 
-Configure the files list as [decribed in the multi task
-section of Grunt documentation](http://gruntjs.com/creating-tasks#multi-tasks).
+Configure the files list as [described in the multi task
+section of the Grunt documentation](http://gruntjs.com/creating-tasks#multi-tasks).
 
 ```js
 grunt.initConfig({
@@ -77,6 +77,6 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## License
 
-Copyright (c) 2013 Juga Paazmaya <olavic@gmail.com>
+Copyright (c) Juga Paazmaya <olavic@gmail.com>
 
 Licensed under the [MIT license](LICENSE-MIT).
