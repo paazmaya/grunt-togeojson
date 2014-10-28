@@ -43,13 +43,13 @@
     "grunt-cli": "^0.1",
     "grunt-contrib-clean": "^0.6",
     "grunt-contrib-nodeunit": "^0.4",
-    "grunt-eslint": "~1.1",
+    "grunt-eslint": "~1.2",
     "grunt-karma": "^0.8",
     "grunt-karma-coveralls": "^2.5",
     "karma": "^0.12",
     "karma-coverage": "^0.2",
     "karma-nodeunit": "^0.1",
-    "jit-grunt": "^0.8",
+    "jit-grunt": "^0.9",
     "time-grunt": "^1.0"
   },
   "peerDependencies": {
