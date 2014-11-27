@@ -2,12 +2,12 @@
 
 > Grunt task for converting KML and GPX files to GeoJSON
 
-[![Build Status](https://travis-ci.org/paazmaya/grunt-togeojson.png?branch=master)](https://travis-ci.org/paazmaya/grunt-togeojson)
-[![Code Climate](https://codeclimate.com/github/paazmaya/grunt-togeojson.png)](https://codeclimate.com/github/paazmaya/grunt-togeojson)
-[![Dependency Status](https://gemnasium.com/paazmaya/grunt-togeojson.png)](https://gemnasium.com/paazmaya/grunt-togeojson)
-[![Coverage Status](https://coveralls.io/repos/paazmaya/grunt-togeojson/badge.png)](https://coveralls.io/r/paazmaya/grunt-togeojson)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/paazmaya/grunt-togeojson/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+[![Build Status](//img.shields.io/travis-ci/paazmaya/grunt-togeojson.svg?style=flat-square)](https://travis-ci.org/paazmaya/grunt-togeojson)
+[![Code Climate](//img.shields.io/codeclimate/paazmaya/grunt-togeojson.svg?style=flat-square)](https://codeclimate.com/github/paazmaya/grunt-togeojson)
+[![Dependency Status](https://img.shields.io/gemnasium/paazmaya/grunt-togeojson.svg?style=flat-square)](https://gemnasium.com/paazmaya/grunt-togeojson)
+[![Coverage Status](//img.shields.io/coveralls/paazmaya/grunt-togeojson/badge.svg?style=flat-square)](https://coveralls.io/r/paazmaya/grunt-togeojson)
 
 ## Getting Started
 
@@ -15,9 +15,9 @@ This plugin requires [Grunt](http://gruntjs.com/) `~0.4`,
 and [toGeoJSON](https://github.com/mapbox/togeojson) `~0.3`
 and [jsdom](https://github.com/tmpvar/jsdom) `~0.8` .
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to 
-check out the [Getting Started](http://gruntjs.com/getting-started) 
-guide, as it explains how to create a 
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
+check out the [Getting Started](http://gruntjs.com/getting-started)
+guide, as it explains how to create a
 [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install
 and use Grunt plugins. Once you're familiar with that process,
 you may install this plugin with this command:
@@ -26,7 +26,7 @@ you may install this plugin with this command:
 npm install grunt-togeojson --save-dev
 ```
 
-Once the plugin has been installed, it may be enabled inside your 
+Once the plugin has been installed, it may be enabled inside your
 Gruntfile with this line of JavaScript:
 
 ```js
@@ -58,14 +58,14 @@ grunt.initConfig({
 
 There are no options.
 
-Conversion will use the same basename of the source file for the 
+Conversion will use the same basename of the source file for the
 destination file.
 
 
 ## Contributing
 
-In lieu of a formal styleguide, take care to maintain the existing 
-coding style. Add unit tests for any new or changed functionality. 
+In lieu of a formal styleguide, take care to maintain the existing
+coding style. Add unit tests for any new or changed functionality.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 
