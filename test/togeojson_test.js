@@ -1,3 +1,11 @@
+/**
+ * grunt-togeojson
+ * https://github.com/paazmaya/grunt-togeojson
+ *
+ * Copyright (c) Juga Paazmaya <olavic@gmail.com>
+ * Licensed under the MIT license.
+ */
+
 'use strict';
 
 var grunt = require('grunt');
@@ -22,11 +30,8 @@ var grunt = require('grunt');
     test.ifError(value)
 */
 exports.togeojson = {
-  setUp: function(done) {
-    // setup here if necessary
-    done();
-  },
-  naginata: function(test) {
+
+  testNaginata: function(test) {
     test.expect(1);
 
     var actual = grunt.file.read('tmp/Naginata.json');

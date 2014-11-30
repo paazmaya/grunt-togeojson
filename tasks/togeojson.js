@@ -2,13 +2,13 @@
  * grunt-togeojson
  * https://github.com/paazmaya/grunt-togeojson
  *
- * Copyright (c) Juga Paazmaya
+ * Copyright (c) Juga Paazmaya <olavic@gmail.com>
  * Licensed under the MIT license.
  */
 
 'use strict';
 
-module.exports = function togeojson(grunt) {
+module.exports = function gruntTogeojson(grunt) {
 
   var togeojson = require('togeojson'),
     jsdom = require('jsdom').jsdom;
