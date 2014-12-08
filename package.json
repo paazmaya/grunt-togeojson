@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "togeojson": "~0.7",
-    "jsdom": "~0.11"
+    "jsdom": "~1.2"
   },
   "devDependencies": {
     "coveralls": "~2.11",
@@ -44,7 +44,7 @@
     "grunt-contrib-clean": "~0.6",
     "grunt-contrib-nodeunit": "~0.4",
     "grunt-eslint": "~2.1",
-    "grunt-karma": "~0.8",
+    "grunt-karma": "~0.9",
     "grunt-karma-coveralls": "~2.5",
     "karma": "~0.12",
     "karma-coverage": "~0.2",
