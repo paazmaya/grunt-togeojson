@@ -1,6 +1,6 @@
 # grunt-togeojson
 
-> Grunt task for converting KML and GPX files to GeoJSON
+> Grunt task for converting KML and GPX files to GeoJSON and TopoJSON
 
 [![Build Status](https://img.shields.io/travis/paazmaya/grunt-togeojson.svg?style=flat-square)](https://travis-ci.org/paazmaya/grunt-togeojson)
 [![Code Climate](https://img.shields.io/codeclimate/paazmaya/grunt-togeojson.svg?style=flat-square)](https://codeclimate.com/github/paazmaya/grunt-togeojson)
@@ -12,9 +12,10 @@
 
 ## Getting Started
 
-This plugin requires [Grunt](http://gruntjs.com/) `~0.4`,
-and [toGeoJSON](https://github.com/mapbox/togeojson) `~0.3`
-and [jsdom](https://github.com/tmpvar/jsdom) `~0.8` .
+This plugin uses [Grunt](http://gruntjs.com/) `~0.4`,
+[toGeoJSON](https://github.com/mapbox/togeojson) `~0.7`,
+[TopoJSON](https://github.com/mbostock/topojson) `~1.6`,
+and [jsdom](https://github.com/tmpvar/jsdom) `~1.2` .
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
 check out the [Getting Started](http://gruntjs.com/getting-started)
@@ -37,6 +38,7 @@ grunt.loadNpmTasks('grunt-togeojson');
 ## The "togeojson" task
 
 ### Overview
+
 In your project's Gruntfile, add a section named `togeojson` to the
 data object passed into `grunt.initConfig()`.
 
@@ -57,10 +59,22 @@ grunt.initConfig({
 
 ### Options
 
-There are no options.
-
 Conversion will use the same basename of the source file for the
 destination file.
+
+#### options.input
+
+Possible values: `'auto'`, `'kml'`, `'gpx'`
+
+Default value: `'auto'`
+
+
+#### options.output
+
+Possible values: `'geojson'`, `'topojson'`
+
+Default value: `'geojson'`
+
 
 
 ## Contributing
