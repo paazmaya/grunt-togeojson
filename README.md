@@ -12,10 +12,10 @@
 
 ## Getting Started
 
-This plugin uses [Grunt](http://gruntjs.com/) `~0.4`,
-[toGeoJSON](https://github.com/mapbox/togeojson) `~0.7`,
-[TopoJSON](https://github.com/mbostock/topojson) `~1.6`,
-and [jsdom](https://github.com/tmpvar/jsdom) `~1.2` .
+This plugin uses [Grunt](http://gruntjs.com/),
+[toGeoJSON](https://github.com/mapbox/togeojson),
+[TopoJSON](https://github.com/mbostock/topojson),
+and [jsdom](https://github.com/tmpvar/jsdom).
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
 check out the [Getting Started](http://gruntjs.com/getting-started)

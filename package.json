@@ -36,7 +36,7 @@
   "dependencies": {
     "togeojson": "~0.7",
     "topojson": "~1.6",
-    "jsdom": "~1.2"
+    "jsdom": "~1.4"
   },
   "devDependencies": {
     "coveralls": "~2.11",
