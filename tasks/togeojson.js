@@ -40,22 +40,24 @@ module.exports = function gruntTogeojson(grunt) {
           grunt.fail.warn('No suitable input method selected');
         }
 
-        var original = grunt.file.read(src);
-        var dom = jsdom(original);
-        var geo = togeojson[method](dom);
+        var original = grunt.file.read(src),
+          dom = jsdom(original),
+          geo = togeojson[method](dom);
 
         if (options.output === 'topojson') {
           geo = topojson.topology(geo);
         }
 
-        var data;
+        var data,
+          encoding = 'utf8';
         if (options.compress) {
+          encoding = null;
           data = geobuf.encode(geo, new Pbf());
         }
         else {
           data = JSON.stringify(geo, null, '  ');
         }
-        grunt.file.write(file.dest, data);
+        grunt.file.write(file.dest, data, { encoding: encoding });
       });
     });
   });

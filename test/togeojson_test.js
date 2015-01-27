@@ -60,7 +60,7 @@ exports.togeojson = {
     test.equal(actual.length, expected.length, 'Geobuf/GeoJSON conversion failed.');
 
     test.done();
-  },
+  }/*,
 
   testGeobufTopo: function(test) {
     test.expect(1);
@@ -71,4 +71,5 @@ exports.togeojson = {
 
     test.done();
   }
+  */
 };
