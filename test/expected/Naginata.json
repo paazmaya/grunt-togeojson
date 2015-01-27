@@ -1,80 +1,80 @@
 {
-	"type": "FeatureCollection",
-	"features": [
-		{
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					135.1744733077541,
-					34.68261145242025,
-					21.16088669026115
-				]
-			},
-			"properties": {
-				"name": "神戸市立スポーツ施設中央体育館",
-				"description": "神戸市立スポーツ施設中央体育館"
-			}
-		},
-		{
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					134.6716699779239,
-					34.85422290727788,
-					25.80139826723638
-				]
-			},
-			"properties": {
-				"name": "Himeji Budokan 姫路武道館",
-				"description": "兵庫県姫路市田寺１丁目１−１５"
-			}
-		},
-		{
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					134.6669959534873,
-					34.82023835059564,
-					8.99999984213479
-				]
-			},
-			"properties": {
-				"name": "Himeji Sports House 姫路市立総合スポーツ会館",
-				"description": "兵庫県姫路市中地４５３"
-			}
-		},
-		{
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					134.6742440141781,
-					34.81916293776852,
-					21.46046149678301
-				]
-			},
-			"properties": {
-				"name": "Hyogo Prefectual Budokan 兵庫県立武道館",
-				"description": "兵庫県姫路市西延末５０４"
-			}
-		},
-		{
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [
-					136.7800960840097,
-					35.3823673976103,
-					9.4025360599309
-				]
-			},
-			"properties": {
-				"name": "岐南町総合体育館 2011-04-22",
-				"description": "第52回 都道府県対抗なぎなた大会"
-			}
-		}
-	]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.1744733077541,
+          34.68261145242025,
+          21.16088669026115
+        ]
+      },
+      "properties": {
+        "name": "神戸市立スポーツ施設中央体育館",
+        "description": "神戸市立スポーツ施設中央体育館"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.6716699779239,
+          34.85422290727788,
+          25.80139826723638
+        ]
+      },
+      "properties": {
+        "name": "Himeji Budokan 姫路武道館",
+        "description": "兵庫県姫路市田寺１丁目１−１５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.6669959534873,
+          34.82023835059564,
+          8.99999984213479
+        ]
+      },
+      "properties": {
+        "name": "Himeji Sports House 姫路市立総合スポーツ会館",
+        "description": "兵庫県姫路市中地４５３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.6742440141781,
+          34.81916293776852,
+          21.46046149678301
+        ]
+      },
+      "properties": {
+        "name": "Hyogo Prefectual Budokan 兵庫県立武道館",
+        "description": "兵庫県姫路市西延末５０４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.7800960840097,
+          35.3823673976103,
+          9.4025360599309
+        ]
+      },
+      "properties": {
+        "name": "岐南町総合体育館 2011-04-22",
+        "description": "第52回 都道府県対抗なぎなた大会"
+      }
+    }
+  ]
 }

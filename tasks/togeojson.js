@@ -8,17 +8,22 @@
 
 'use strict';
 
+var togeojson = require('togeojson'),
+  topojson = require('topojson'),
+  Pbf = require('pbf'),
+  geobuf = require('geobuf'),
+  jsdom = require('jsdom').jsdom;
+
 module.exports = function gruntTogeojson(grunt) {
 
-  var togeojson = require('togeojson'),
-    topojson = require('topojson'),
-    jsdom = require('jsdom').jsdom;
-
-  grunt.registerMultiTask('togeojson', 'Convert KML and GPX files to GeoJSON and TopoJSON', function register() {
+  grunt.registerMultiTask('togeojson',
+    'Convert KML and GPX files to GeoJSON and TopoJSON',
+    function register() {
 
     var options = this.options({
       input: 'auto',
-      output: 'geojson'
+      output: 'geojson',
+      compress: false
     });
 
     this.files.forEach(function filesEach(file) {
@@ -32,7 +37,7 @@ module.exports = function gruntTogeojson(grunt) {
           method = options.input;
         }
         else {
-          // No suitable input method selected.
+          grunt.fail.warn('No suitable input method selected');
         }
 
         var original = grunt.file.read(src);
@@ -43,8 +48,13 @@ module.exports = function gruntTogeojson(grunt) {
           geo = topojson.topology(geo);
         }
 
-        var data = JSON.stringify(geo, null, '\t');
-
+        var data;
+        if (options.compress) {
+          data = geobuf.encode(geo, new Pbf());
+        }
+        else {
+          data = JSON.stringify(geo, null, '  ');
+        }
         grunt.file.write(file.dest, data);
       });
     });

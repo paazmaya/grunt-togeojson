@@ -15,6 +15,7 @@
 This plugin uses [Grunt](http://gruntjs.com/),
 [toGeoJSON](https://github.com/mapbox/togeojson),
 [TopoJSON](https://github.com/mbostock/topojson),
+[Geobuf](https://github.com/mapbox/geobuf),
 and [jsdom](https://github.com/tmpvar/jsdom).
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
@@ -64,18 +65,29 @@ destination file.
 
 #### options.input
 
-Possible values: `'auto'`, `'kml'`, `'gpx'`
+Type: `String`
 
 Default value: `'auto'`
 
+Possible values: `'auto'`, `'kml'`, `'gpx'`
 
 #### options.output
 
-Possible values: `'geojson'`, `'topojson'`
+Type: `String`
 
 Default value: `'geojson'`
 
+Possible values: `'geojson'`, `'topojson'`
 
+#### options.compress
+
+Type: `Boolean`
+
+Default value: `false`
+
+Possible values: `true`, `false`
+
+Compress the resulting GeoJSON or TopoJSON with Geobuf.
 
 ## Contributing
 

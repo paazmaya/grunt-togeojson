@@ -32,9 +32,34 @@ module.exports = function gruntConf(grunt) {
 
     // Configuration to be run (and then tested).
     togeojson: {
-      naginata: {
+      geojson: {
         files: {
           'tmp/Naginata.json': ['test/fixtures/Naginata.kml']
+        }
+      },
+      topojson: {
+        options: {
+          output: 'topojson'
+        },
+        files: {
+          'tmp/Naginata.topo': ['test/fixtures/Naginata.kml']
+        }
+      },
+      geobuf: {
+        options: {
+          compress: true
+        },
+        files: {
+          'tmp/Naginata.geobuf': ['test/fixtures/Naginata.kml']
+        }
+      },
+      geobuf_topo: {
+        options: {
+          compress: true,
+          output: 'topojson'
+        },
+        files: {
+          'tmp/Naginata.topo.geobuf': ['test/fixtures/Naginata.kml']
         }
       }
     },
@@ -65,7 +90,6 @@ module.exports = function gruntConf(grunt) {
   require('jit-grunt')(grunt);
 
   grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit']);
-
   grunt.registerTask('default', ['eslint', 'test', 'karma']);
 
 };
