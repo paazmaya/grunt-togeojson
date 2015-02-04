@@ -57,7 +57,7 @@ module.exports = function gruntTogeojson(grunt) {
         else {
           data = JSON.stringify(geo, null, '  ');
         }
-        grunt.file.write(file.dest, data, { encoding: encoding });
+        grunt.file.write(file.dest, data, {encoding: encoding});
       });
     });
   });
