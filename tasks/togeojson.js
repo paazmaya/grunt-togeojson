@@ -20,56 +20,57 @@ module.exports = function gruntTogeojson(grunt) {
     'Convert KML and GPX files to GeoJSON and TopoJSON',
     function register() {
 
-      var options = this.options({
-        input: 'auto',
-        output: 'geojson',
-        compress: false
-      }),
-      count = 0;
+    var options = this.options({
+      input: 'auto',
+      output: 'geojson',
+      compress: false
+    }),
+    count = 0;
 
-      this.files.forEach(function filesEach(file) {
-        var method = 'kml';
-        file.src.forEach(function srcEach(src) {
-          if (options.input === 'auto') {
-            method = src.match(/\.gpx$/i) ? 'gpx' : 'kml';
-          }
-          else if (togeojson.hasOwnProperty(options.input) &&
-            typeof togeojson[options.input] === 'function') {
-            method = options.input;
-          }
-          else {
-            grunt.fail.warn('No suitable input method selected');
-          }
+    this.files.forEach(function filesEach(file) {
+      var method = 'kml';
+      file.src.forEach(function srcEach(src) {
+        if (options.input === 'auto') {
+          method = src.match(/\.gpx$/i) ? 'gpx' : 'kml';
+        }
+        else if (togeojson.hasOwnProperty(options.input) &&
+          typeof togeojson[options.input] === 'function') {
+          method = options.input;
+        }
+        else {
+          grunt.fail.warn('No suitable input method selected');
+        }
 
-          var original = grunt.file.read(src),
-            dom = jsdom(original),
-            geo = togeojson[method](dom);
+        var original = grunt.file.read(src),
+          dom = jsdom(original),
+          geo = togeojson[method](dom);
 
-          if (options.output === 'topojson') {
-            geo = topojson.topology(geo);
-          }
+        if (options.output === 'topojson') {
+          geo = topojson.topology(geo);
+        }
 
-          var data,
-            encoding = 'utf8';
-          if (options.compress) {
-            encoding = null;
-            data = geobuf.encode(geo, new Pbf());
-          }
-          else {
-            data = JSON.stringify(geo, null, '  ');
-          }
+        var data,
+          encoding = 'utf8';
+        if (options.compress) {
+          encoding = null;
+          data = geobuf.encode(geo, new Pbf());
+        }
+        else {
+          data = JSON.stringify(geo, null, '  ');
+        }
 
-          var dest = file.dest;
+        var dest = file.dest;
 
-          if (options.rename) {
-            dest = options.rename(src, dest, options.output);
-          }
+        if (options.rename) {
+          dest = options.rename(src, dest, options.output);
+        }
 
-          grunt.file.write(dest, data, {encoding: encoding});
-          count++;
-        });
+        grunt.file.write(dest, data, {encoding: encoding});
+
+        count++;
       });
-
-      grunt.log.ok(count + ' ' + grunt.util.pluralize(count, 'file/files') + ' converted.');
     });
+
+    grunt.log.ok(count + ' ' + grunt.util.pluralize(count, 'file/files') + ' converted.');
+  });
 };
