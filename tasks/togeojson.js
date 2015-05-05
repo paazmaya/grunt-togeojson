@@ -49,9 +49,9 @@ module.exports = function gruntTogeojson(grunt) {
         }
 
         var data,
-          encoding = 'utf8';
+          encoding = 'utf8'; // string content
         if (options.compress) {
-          encoding = null;
+          encoding = null; // binary content
           data = geobuf.encode(geo, new Pbf());
         }
         else {
