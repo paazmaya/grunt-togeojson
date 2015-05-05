@@ -86,7 +86,8 @@ Default value: `false`
 
 Possible values: `true`, `false`
 
-Compress the resulting GeoJSON or TopoJSON with Geobuf.
+Compress the resulting GeoJSON with Geobuf.
+Please note that TopoJSON is not supported to be compressed via Geobuf.
 
 ## Contributing
 
@@ -99,6 +100,7 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
+ * 2015-05-05   v1.1.0   Remove Geobuf/TopoJSON combination since it is not supported
  * 2015-01-27   v1.0.0   Conversion to TopoJSON and Geobuf added
  * 2013-09-30   v0.1.0   Initial release
 

@@ -60,16 +60,6 @@ exports.togeojson = {
     test.equal(actual.length, expected.length, 'Geobuf/GeoJSON conversion failed.');
 
     test.done();
-  }/*,
-
-  testGeobufTopo: function(test) {
-    test.expect(1);
-
-    var actual = fs.readFileSync('tmp/Naginata.topo.geobuf', null);
-    var expected = fs.readFileSync('test/expected/Naginata.topo.geobuf', null);
-    test.equal(actual.length, expected.length, 'Geobuf/TopoJSON conversion failed.');
-
-    test.done();
   }
-  */
+
 };

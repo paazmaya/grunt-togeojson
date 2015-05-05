@@ -1,7 +1,7 @@
 {
   "name": "grunt-togeojson",
   "description": "Grunt task for converting KML and GPX files to GeoJSON",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/paazmaya/grunt-togeojson",
   "author": {
     "name": "Juga Paazmaya",
@@ -64,6 +64,8 @@
     "kml",
     "gpx",
     "convert",
-    "transform"
+    "transform",
+    "compress",
+    "maps"
   ]
 }

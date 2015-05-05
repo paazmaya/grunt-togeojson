@@ -46,6 +46,10 @@ module.exports = function gruntTogeojson(grunt) {
 
         if (options.output === 'topojson') {
           geo = topojson.topology(geo);
+
+          if (options.compress) {
+            grunt.fail.warn('Geobuf compression is not supported for TopoJSON');
+          }
         }
 
         var data,

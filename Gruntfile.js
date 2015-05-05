@@ -52,15 +52,6 @@ module.exports = function gruntConf(grunt) {
         files: {
           'tmp/Naginata.geobuf': ['test/fixtures/Naginata.kml']
         }
-      },
-      geobuf_topo: {
-        options: {
-          compress: true,
-          output: 'topojson'
-        },
-        files: {
-          'tmp/Naginata.topo.geobuf': ['test/fixtures/Naginata.kml']
-        }
       }
     },
 
