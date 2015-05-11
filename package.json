@@ -34,8 +34,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "geobuf": "~0.2",
-    "jsdom": "~5.4.1",
+    "geobuf": "~1.0",
+    "jsdom": "3.1.2",
     "pbf": "~1.3",
     "togeojson": "~0.11",
     "topojson": "~1.6"
