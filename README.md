@@ -11,13 +11,14 @@
 
 ## Getting Started
 
-This plugin uses [Grunt](http://gruntjs.com/),
+This Grunt task runner plugin uses [Grunt](http://gruntjs.com/),
 [toGeoJSON](https://github.com/mapbox/togeojson),
 [TopoJSON](https://github.com/mbostock/topojson),
 [Geobuf](https://github.com/mapbox/geobuf),
 and [jsdom](https://github.com/tmpvar/jsdom).
 
-Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `4.0.0`.
+Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `4.0.0`,
+starting from the release `2.0.0` of this plugin.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
 check out the [Getting Started](http://gruntjs.com/getting-started)

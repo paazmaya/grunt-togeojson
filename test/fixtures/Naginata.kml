@@ -2,88 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document>
 	<name>Naginata.kml</name>
-	<Style id="sh_grn-stars">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
-			</Icon>
-			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<ListStyle>
-			<ItemIcon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
-			</ItemIcon>
-		</ListStyle>
-	</Style>
-	<Style id="sh_wht-diamond">
-		<IconStyle>
-			<scale>1.3</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
-			</Icon>
-			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<ListStyle>
-			<ItemIcon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
-			</ItemIcon>
-		</ListStyle>
-	</Style>
-	<Style id="sn_grn-stars">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
-			</Icon>
-			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<ListStyle>
-			<ItemIcon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
-			</ItemIcon>
-		</ListStyle>
-	</Style>
-	<StyleMap id="msn_wht-diamond">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_wht-diamond</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_wht-diamond</styleUrl>
-		</Pair>
-	</StyleMap>
-	<StyleMap id="msn_grn-stars">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#sn_grn-stars</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#sh_grn-stars</styleUrl>
-		</Pair>
-	</StyleMap>
-	<Style id="sn_wht-diamond">
-		<IconStyle>
-			<scale>1.1</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href>
-			</Icon>
-			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
-		</IconStyle>
-		<LabelStyle>
-			<scale>0</scale>
-		</LabelStyle>
-		<ListStyle>
-			<ItemIcon>
-				<href>http://maps.google.com/mapfiles/kml/paddle/grn-stars-lv.png</href>
-			</ItemIcon>
-		</ListStyle>
-	</Style>
 	<Folder>
 		<name>Naginata</name>
 		<open>1</open>
@@ -100,7 +18,7 @@
 				<altitudeMode>relativeToGround</altitudeMode>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_wht-diamond</styleUrl>
+
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
 				<coordinates>135.1744733077541,34.68261145242025,21.16088669026115</coordinates>
@@ -119,7 +37,7 @@
 				<altitudeMode>relativeToGround</altitudeMode>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_wht-diamond</styleUrl>
+
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
 				<coordinates>134.6716699779239,34.85422290727788,25.80139826723638</coordinates>
@@ -138,7 +56,7 @@
 				<altitudeMode>relativeToGround</altitudeMode>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_wht-diamond</styleUrl>
+
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
 				<coordinates>134.6669959534873,34.82023835059564,8.999999842134789</coordinates>
@@ -157,7 +75,7 @@
 				<altitudeMode>relativeToGround</altitudeMode>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_wht-diamond</styleUrl>
+
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
 				<coordinates>134.6742440141781,34.81916293776852,21.46046149678301</coordinates>
@@ -176,7 +94,7 @@
 				<altitudeMode>relativeToGround</altitudeMode>
 				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
 			</LookAt>
-			<styleUrl>#msn_grn-stars</styleUrl>
+
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
 				<coordinates>136.7800960840097,35.3823673976103,9.402536059930901</coordinates>
