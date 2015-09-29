@@ -2,7 +2,7 @@
  * grunt-togeojson
  * https://github.com/paazmaya/grunt-togeojson
  *
- * Copyright (c) Juga Paazmaya <olavic@gmail.com>
+ * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com>
  * Licensed under the MIT license.
  */
 

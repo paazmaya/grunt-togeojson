@@ -17,6 +17,8 @@ This plugin uses [Grunt](http://gruntjs.com/),
 [Geobuf](https://github.com/mapbox/geobuf),
 and [jsdom](https://github.com/tmpvar/jsdom).
 
+Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `4.0.0`.
+
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
 check out the [Getting Started](http://gruntjs.com/getting-started)
 guide, as it explains how to create a
@@ -100,6 +102,7 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
+ * 2015-09-29   v2.0.0   Upgraded to `jsdom` v6, which mean to force using Node.js 4
  * 2015-05-05   v1.1.0   Remove Geobuf/TopoJSON combination since it is not supported
  * 2015-01-27   v1.0.0   Conversion to TopoJSON and Geobuf added
  * 2013-09-30   v0.1.0   Initial release
