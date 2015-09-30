@@ -20,8 +20,7 @@ module.exports = function gruntConf(grunt) {
       target: [
         'Gruntfile.js',
         'karma.conf.js',
-        'tasks/*.js',
-        '<%= nodeunit.tests %>'
+        'tasks/*.js'
       ]
     },
 
@@ -80,7 +79,7 @@ module.exports = function gruntConf(grunt) {
 
   require('jit-grunt')(grunt);
 
-  grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit']);
-  grunt.registerTask('default', ['eslint', 'test', 'karma']);
+  grunt.registerTask('test', ['eslint', 'clean', 'togeojson', 'nodeunit']);
+  grunt.registerTask('default', ['test', 'karma']);
 
 };

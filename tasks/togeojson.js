@@ -16,9 +16,7 @@ var togeojson = require('togeojson'),
 
 module.exports = function gruntTogeojson(grunt) {
 
-  grunt.registerMultiTask('togeojson',
-    'Convert KML and GPX files to GeoJSON and TopoJSON',
-    function register() {
+  grunt.registerMultiTask('togeojson', 'Convert KML and GPX files to GeoJSON and TopoJSON', function register() {
 
     var options = this.options({
       input: 'auto',
@@ -28,7 +26,9 @@ module.exports = function gruntTogeojson(grunt) {
 
     this.files.forEach(function filesEach(file) {
       var method = 'kml';
+
       file.src.forEach(function srcEach(src) {
+
         if (options.input === 'auto') {
           method = src.match(/\.gpx$/i) ? 'gpx' : 'kml';
         }
