@@ -1,12 +1,12 @@
 {
   "name": "grunt-togeojson",
   "description": "Grunt task for converting KML and GPX files to GeoJSON and TopoJSON",
-  "version": "2.0.0-dev",
+  "version": "2.0.0",
   "homepage": "https://github.com/paazmaya/grunt-togeojson",
   "author": {
     "name": "Juga Paazmaya",
     "email": "paazmaya@yahoo.com",
-    "url": "http://paazmaya.divshot.io"
+    "url": "http://paazmaya.fi"
   },
   "repository": {
     "type": "git",
@@ -23,14 +23,14 @@
   ],
   "main": "Gruntfile.js",
   "engines": {
-    "node": "4.x"
+    "node": ">=4.2"
   },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
     "geobuf": "~1.0",
-    "jsdom": "~6.5",
+    "jsdom": "~7.0",
     "pbf": "~1.3",
     "togeojson": "~0.13",
     "topojson": "~1.6"

@@ -27,7 +27,7 @@ guide, as it explains how to create a
 and use Grunt plugins. Once you're familiar with that process,
 you may install this plugin with this command:
 
-```shell
+```sh
 npm install grunt-togeojson --save-dev
 ```
 
@@ -73,6 +73,9 @@ Default value: `'auto'`
 
 Possible values: `'auto'`, `'kml'`, `'gpx'`
 
+The default value (`'auto'`) will determine the type based on the
+input file extension, namely checking if it is `.gpx` or not.
+
 #### options.output
 
 Type: `String`
@@ -80,6 +83,8 @@ Type: `String`
 Default value: `'geojson'`
 
 Possible values: `'geojson'`, `'topojson'`
+
+Using `'topojson'` will disable `options.compress`.
 
 #### options.compress
 
@@ -103,7 +108,7 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
- * 2015-09-29   v2.0.0   Upgraded to `jsdom` v6, which mean to force using Node.js 4
+ * 2015-10-28   v2.0.0   Upgraded to `jsdom` v7, which mean to force using Node.js 4
  * 2015-05-05   v1.1.0   Remove Geobuf/TopoJSON combination since it is not supported
  * 2015-01-27   v1.0.0   Conversion to TopoJSON and Geobuf added
  * 2013-09-30   v0.1.0   Initial release
