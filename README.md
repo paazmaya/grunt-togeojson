@@ -108,14 +108,14 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
- * 2015-10-28   v2.0.0   Upgraded to `jsdom` v7, which mean to force using Node.js 4
- * 2015-05-05   v1.1.0   Remove Geobuf/TopoJSON combination since it is not supported
- * 2015-01-27   v1.0.0   Conversion to TopoJSON and Geobuf added
- * 2013-09-30   v0.1.0   Initial release
+ * `v2.0.0` (2015-10-28) Upgraded to `jsdom` v7, which mean to force using Node.js 4
+ * `v1.1.0` (2015-05-05) Remove Geobuf/TopoJSON combination since it is not supported
+ * `v1.0.0` (2015-01-27) Conversion to TopoJSON and Geobuf added
+ * `v0.1.0` (2013-09-30) Initial release
 
 
 ## License
 
-Copyright (c) [Juga Paazmaya](http://paazmaya.fi)
+Copyright (c) [Juga Paazmaya <paazmaya@yahoo.com>](http://paazmaya.fi)
 
 Licensed under the [MIT license](LICENSE).

@@ -26,7 +26,8 @@
     "node": ">=4.2"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "lint": "grunt eslint"
   },
   "dependencies": {
     "geobuf": "~1.0",

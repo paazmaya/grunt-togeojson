@@ -2,13 +2,13 @@
  * grunt-togeojson
  * https://github.com/paazmaya/grunt-togeojson
  *
- * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com>
+ * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (http://paazmaya.fi)
  * Licensed under the MIT license.
  */
 
 'use strict';
 
-var togeojson = require('togeojson'),
+const togeojson = require('togeojson'),
   topojson = require('topojson'),
   Pbf = require('pbf'),
   geobuf = require('geobuf'),
