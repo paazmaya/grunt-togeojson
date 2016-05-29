@@ -31,8 +31,8 @@
   },
   "dependencies": {
     "geobuf": "~2.0",
-    "jsdom": "~9.0",
-    "pbf": "~1.3",
+    "jsdom": "~9.2",
+    "pbf": "~2.0",
     "togeojson": "~0.13",
     "topojson": "~1.6"
   },
