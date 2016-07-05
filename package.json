@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "geobuf": "~2.0",
-    "jsdom": "~9.2",
+    "jsdom": "~9.4",
     "pbf": "~2.0",
     "togeojson": "~0.13",
     "topojson": "~1.6"
@@ -41,7 +41,7 @@
     "grunt": "~1.0",
     "grunt-contrib-clean": "~1.0",
     "grunt-contrib-nodeunit": "~1.0",
-    "grunt-eslint": "~18.1",
+    "grunt-eslint": "~19.0",
     "jit-grunt": "~0.10",
     "time-grunt": "~1.3"
   },
