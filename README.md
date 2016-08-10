@@ -101,9 +101,11 @@ Please note that TopoJSON is not supported to be compressed via Geobuf.
 
 Type: `Function`
 
-Parameters: source, destination, output format
+Default value: `null`
 
-Returns: `String` 
+Parameters: `src` (source file path), `dest` (destination file path), `options.output`
+
+Returns: `String`
 
 The function should return a string of the new destination path for the file
 
@@ -118,6 +120,8 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
+ * `v2.3.0` (2016-08-)
+  - Add `options.rename` #9
  * `v2.2.0` (2016-08-10)
   - Dependencies are sure :tophat: up to date
   - Use shared ESLint configuration and ESLint directly without the Grunt.js plugin

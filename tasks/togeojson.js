@@ -21,9 +21,11 @@ module.exports = function gruntTogeojson(grunt) {
     const options = this.options({
       input: 'auto',
       output: 'geojson',
-      compress: false
-    }),
-    count = 0;
+      compress: false,
+      rename: null
+    });
+
+    let count = 0;
 
     this.files.forEach(function filesEach(file) {
       let method = 'kml';
@@ -64,13 +66,13 @@ module.exports = function gruntTogeojson(grunt) {
           data = JSON.stringify(geo, null, '  ');
         }
 
-        var dest = file.dest;
+        let dest = file.dest;
 
         if (typeof options.rename === 'function') {
           dest = options.rename(src, dest, options.output);
         }
 
-        grunt.file.write(file.dest, data, {
+        grunt.file.write(dest, data, {
           encoding: encoding
         });
 
