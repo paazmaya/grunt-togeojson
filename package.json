@@ -33,7 +33,7 @@
     "geobuf": "~2.0",
     "jsdom": "~9.4",
     "pbf": "~2.0",
-    "togeojson": "~0.13",
+    "togeojson": "~0.14",
     "topojson": "~1.6"
   },
   "devDependencies": {
