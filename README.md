@@ -97,6 +97,16 @@ Possible values: `true`, `false`
 Compress the resulting GeoJSON with Geobuf.
 Please note that TopoJSON is not supported to be compressed via Geobuf.
 
+#### options.rename
+
+Type: `Function`
+
+Parameters: source, destination, output format
+
+Returns: `String` 
+
+The function should return a string of the new destination path for the file
+
 ## Contributing
 
 [Please refer to a GitHub blog post on how to create somewhat perfect pull request.](https://github.com/blog/1943-how-to-write-the-perfect-pull-request "How to write the perfect pull request")

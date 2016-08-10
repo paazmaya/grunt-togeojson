@@ -22,7 +22,8 @@ module.exports = function gruntTogeojson(grunt) {
       input: 'auto',
       output: 'geojson',
       compress: false
-    });
+    }),
+    count = 0;
 
     this.files.forEach(function filesEach(file) {
       let method = 'kml';
@@ -62,11 +63,21 @@ module.exports = function gruntTogeojson(grunt) {
         else {
           data = JSON.stringify(geo, null, '  ');
         }
+
+        var dest = file.dest;
+
+        if (typeof options.rename === 'function') {
+          dest = options.rename(src, dest, options.output);
+        }
+
         grunt.file.write(file.dest, data, {
           encoding: encoding
         });
+
+        count++;
       });
     });
-  });
 
+    grunt.log.ok(count + ' ' + grunt.util.pluralize(count, 'file/files') + ' converted.');
+  });
 };
