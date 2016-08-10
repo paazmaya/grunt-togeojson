@@ -18,21 +18,21 @@ module.exports = function gruntTogeojson(grunt) {
 
   grunt.registerMultiTask('togeojson', 'Convert KML and GPX files to GeoJSON and TopoJSON', function register() {
 
-    var options = this.options({
+    const options = this.options({
       input: 'auto',
       output: 'geojson',
       compress: false
     });
 
     this.files.forEach(function filesEach(file) {
-      var method = 'kml';
+      let method = 'kml';
 
       file.src.forEach(function srcEach(src) {
 
         if (options.input === 'auto') {
           method = src.match(/\.gpx$/i) ? 'gpx' : 'kml';
         }
-        else if (togeojson.hasOwnProperty(options.input) &&
+        else if (Object.prototype.hasOwnProperty.call(togeojson, options.input) &&
           typeof togeojson[options.input] === 'function') {
           method = options.input;
         }
@@ -40,9 +40,10 @@ module.exports = function gruntTogeojson(grunt) {
           grunt.fail.warn('No suitable input method selected');
         }
 
-        var original = grunt.file.read(src),
-          dom = jsdom(original),
-          geo = togeojson[method](dom);
+        const original = grunt.file.read(src),
+          dom = jsdom(original);
+
+        let geo = togeojson[method](dom);
 
         if (options.output === 'topojson') {
           geo = topojson.topology(geo);
@@ -52,7 +53,7 @@ module.exports = function gruntTogeojson(grunt) {
           }
         }
 
-        var data,
+        let data,
           encoding = 'utf8'; // string content
         if (options.compress) {
           encoding = null; // binary content
@@ -61,7 +62,9 @@ module.exports = function gruntTogeojson(grunt) {
         else {
           data = JSON.stringify(geo, null, '  ');
         }
-        grunt.file.write(file.dest, data, {encoding: encoding});
+        grunt.file.write(file.dest, data, {
+          encoding: encoding
+        });
       });
     });
   });

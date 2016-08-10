@@ -12,17 +12,6 @@ module.exports = function gruntConf(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    eslint: {
-      options: {
-        config: '.eslintrc.json',
-        format: 'stylish'
-      },
-      target: [
-        'Gruntfile.js',
-        'karma.conf.js',
-        'tasks/*.js'
-      ]
-    },
 
     // Before generating any new files, remove any previously-created files.
     clean: {
@@ -79,7 +68,7 @@ module.exports = function gruntConf(grunt) {
 
   require('jit-grunt')(grunt);
 
-  grunt.registerTask('test', ['eslint', 'clean', 'togeojson', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'togeojson', 'nodeunit']);
   grunt.registerTask('default', ['test', 'karma']);
 
 };
