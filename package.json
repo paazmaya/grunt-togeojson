@@ -30,15 +30,15 @@
     "lint": "eslint -c .eslintrc.json Gruntfile.js karma.conf.js tasks"
   },
   "dependencies": {
-    "geobuf": "~2.0",
+    "geobuf": "~3.0",
     "jsdom": "~9.5",
     "pbf": "~3.0",
     "togeojson": "~0.14",
     "topojson": "~1.6"
   },
   "devDependencies": {
-    "eslint": "^3.4.0",
-    "eslint-config-paazmaya": "^2.3.1",
+    "eslint": "^3.6.1",
+    "eslint-config-paazmaya": "^3.0.0",
     "grunt": "~1.0",
     "grunt-contrib-clean": "~1.0",
     "grunt-contrib-nodeunit": "~1.0",
