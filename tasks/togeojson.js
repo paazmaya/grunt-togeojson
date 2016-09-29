@@ -33,7 +33,9 @@ module.exports = function gruntTogeojson(grunt) {
       file.src.forEach(function srcEach(src) {
 
         if (options.input === 'auto') {
-          method = src.match(/\.gpx$/i) ? 'gpx' : 'kml';
+          method = src.match(/\.gpx$/i) ?
+            'gpx' :
+            'kml';
         }
         else if (Object.prototype.hasOwnProperty.call(togeojson, options.input) &&
           typeof togeojson[options.input] === 'function') {
