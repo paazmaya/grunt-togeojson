@@ -27,20 +27,20 @@
   },
   "scripts": {
     "test": "grunt test",
-    "lint": "eslint -c .eslintrc.json Gruntfile.js karma.conf.js tasks"
+    "lint": "eslint Gruntfile.js karma.conf.js tasks"
   },
   "dependencies": {
     "geobuf": "~3.0",
-    "jsdom": "~9.12",
+    "jsdom": "~10.1",
     "pbf": "~3.0",
     "togeojson": "~0.16",
-    "topojson": "~2.2"
+    "topojson": "~3.0"
   },
   "devDependencies": {
-    "eslint": "^3.18.0",
+    "eslint": "^3.19.0",
     "eslint-config-paazmaya": "^3.2.0",
     "grunt": "~1.0",
-    "grunt-contrib-clean": "~1.0",
+    "grunt-contrib-clean": "~1.1",
     "grunt-contrib-nodeunit": "~1.0",
     "jit-grunt": "~0.10",
     "time-grunt": "~1.4"
