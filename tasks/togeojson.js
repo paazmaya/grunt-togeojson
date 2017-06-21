@@ -9,7 +9,7 @@
 'use strict';
 
 const togeojson = require('togeojson'),
-  topojson = require('topojson'),
+  topojson = require('topojson-server'),
   Pbf = require('pbf'),
   geobuf = require('geobuf'),
   jsdom = require('jsdom/lib/old-api.js').jsdom;
@@ -62,7 +62,7 @@ module.exports = function gruntTogeojson(grunt) {
           encoding = 'utf8'; // string content
         if (options.compress) {
           encoding = null; // binary content
-          data = geobuf.encode(geo, new Pbf());
+          data = Buffer.from(geobuf.encode(geo, new Pbf()));
         }
         else {
           data = JSON.stringify(geo, null, '  ');

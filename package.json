@@ -34,7 +34,7 @@
     "jsdom": "~11.0",
     "pbf": "~3.0",
     "togeojson": "~0.16",
-    "topojson": "~3.0"
+    "topojson-server": "~3.0"
   },
   "devDependencies": {
     "eslint": "^4.0.0",
