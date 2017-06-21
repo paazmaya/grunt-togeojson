@@ -120,7 +120,7 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
- * `v2.3.0` (2016-08-)
+ * `v2.3.0` (2017-06-)
   - Add `options.rename` #9
  * `v2.2.0` (2016-08-10)
   - Dependencies are sure :tophat: up to date

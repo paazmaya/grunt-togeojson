@@ -12,7 +12,7 @@ const togeojson = require('togeojson'),
   topojson = require('topojson'),
   Pbf = require('pbf'),
   geobuf = require('geobuf'),
-  jsdom = require('jsdom').jsdom;
+  jsdom = require('jsdom/lib/old-api.js').jsdom;
 
 module.exports = function gruntTogeojson(grunt) {
 
