@@ -16,8 +16,8 @@ This Grunt task runner plugin uses [Grunt](http://gruntjs.com/),
 [Geobuf](https://github.com/mapbox/geobuf),
 and [jsdom](https://github.com/tmpvar/jsdom).
 
-Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `4.2.0`,
-starting from the release `2.0.0` of this plugin.
+Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `6.9.5` (LTS),
+starting from the release `3.0.0` of this plugin.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
 check out the [Getting Started](http://gruntjs.com/getting-started)
@@ -119,9 +119,11 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
-* `v2.3.0` (2017-06-)
+* `v3.0.0` (2017-07-)
   - Add `options.rename` #9
   - Several API changes in the updated dependencies have been migrated
+  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
+  - `main` property in `package.json` was pointing to a wrong file
 * `v2.2.0` (2016-08-10)
   - Dependencies are sure :tophat: up to date
   - Use shared ESLint configuration and ESLint directly without the Grunt.js plugin
