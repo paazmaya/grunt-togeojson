@@ -27,14 +27,17 @@
   },
   "scripts": {
     "test": "grunt test",
-    "lint": "eslint Gruntfile.js karma.conf.js tasks"
+    "lint": "eslint Gruntfile.js karma.conf.js tasks",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "geobuf": "~3.0",
     "jsdom": "~11.5",
     "pbf": "~3.1",
     "togeojson": "~0.16",
-    "topojson-server": "~3.0"
+    "topojson-server": "~3.0",
+    "snyk": "^1.69.10"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
@@ -63,5 +66,6 @@
     "transform",
     "compress",
     "maps"
-  ]
+  ],
+  "snyk": true
 }
