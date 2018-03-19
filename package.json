@@ -33,14 +33,14 @@
   },
   "dependencies": {
     "geobuf": "~3.0",
-    "jsdom": "~11.5",
+    "jsdom": "~11.6",
     "pbf": "~3.1",
     "togeojson": "~0.16",
     "topojson-server": "~3.0",
-    "snyk": "^1.69.10"
+    "snyk": "^1.70.2"
   },
   "devDependencies": {
-    "eslint": "^4.15.0",
+    "eslint": "^4.19.0",
     "eslint-config-paazmaya": "^4.3.0",
     "grunt": "~1.0",
     "grunt-contrib-clean": "~1.1",
