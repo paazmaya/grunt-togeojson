@@ -16,8 +16,8 @@ This Grunt task runner plugin uses [Grunt](http://gruntjs.com/),
 [Geobuf](https://github.com/mapbox/geobuf),
 and [jsdom](https://github.com/tmpvar/jsdom).
 
-Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `6.9.5`, which is [the Long Term Support (LTS) version](https://github.com/nodejs/LTS#lts-schedule1),
-starting from the release `3.0.0` of this plugin.
+Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule),
+starting from the release `4.0.0` of this plugin.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
 check out the [Getting Started](http://gruntjs.com/getting-started)
