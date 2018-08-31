@@ -8,11 +8,11 @@
 
 'use strict';
 
-const togeojson = require('togeojson'),
+const togeojson = require('@mapbox/togeojson'),
   topojson = require('topojson-server'),
   Pbf = require('pbf'),
   geobuf = require('geobuf'),
-  jsdom = require('jsdom/lib/old-api.js').jsdom;
+  JSDOM = require('jsdom').JSDOM;
 
 module.exports = function gruntTogeojson(grunt) {
 
@@ -33,7 +33,7 @@ module.exports = function gruntTogeojson(grunt) {
       file.src.forEach(function srcEach(src) {
 
         if (options.input === 'auto') {
-          method = src.match(/\.gpx$/i) ?
+          method = src.match(/\.gpx$/iu) ?
             'gpx' :
             'kml';
         }
@@ -46,7 +46,7 @@ module.exports = function gruntTogeojson(grunt) {
         }
 
         const original = grunt.file.read(src),
-          dom = jsdom(original);
+          dom = (new JSDOM(original)).window.document;
 
         let geo = togeojson[method](dom);
 

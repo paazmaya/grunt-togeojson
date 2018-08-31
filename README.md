@@ -17,7 +17,7 @@ This Grunt task runner plugin uses [Grunt](http://gruntjs.com/),
 and [jsdom](https://github.com/tmpvar/jsdom).
 
 Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule),
-starting from the release `4.0.0` of this plugin.
+starting from the release `3.0.0` of this plugin.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
 check out the [Getting Started](http://gruntjs.com/getting-started)
@@ -119,11 +119,12 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
-* `v3.0.0` (2017-07-)
+* `v3.0.0` (2018-08-)
   - Add `options.rename` #9
   - Several API changes in the updated dependencies have been migrated
-  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
+  - Minimum Node.js version lifted from `4.2.0` to `8.11.1`
   - `main` property in `package.json` was pointing to a wrong file
+  - Migrated from deprecated `togeojson` to `@mapbox/togeojson`, which was merely a package name change
 * `v2.2.0` (2016-08-10)
   - Dependencies are sure :tophat: up to date
   - Use shared ESLint configuration and ESLint directly without the Grunt.js plugin
