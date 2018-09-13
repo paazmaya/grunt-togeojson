@@ -33,19 +33,19 @@
   },
   "dependencies": {
     "@mapbox/togeojson": "~0.16.0",
-    "geobuf": "~3.0.0",
+    "geobuf": "~3.0.1",
     "jsdom": "~12.0.0",
     "pbf": "~3.1.0",
     "topojson-server": "~3.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.4.0",
+    "eslint": "^5.5.0",
     "eslint-config-paazmaya": "^5.0.0",
-    "grunt": "^1.0.0",
-    "grunt-contrib-clean": "^1.1.0",
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-nodeunit": "^2.0.0",
     "jit-grunt": "^0.10.0",
-    "snyk": "^1.94.0",
+    "snyk": "^1.95.3",
     "time-grunt": "^1.4.0"
   },
   "peerDependencies": {
