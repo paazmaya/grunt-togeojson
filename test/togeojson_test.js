@@ -35,8 +35,8 @@ exports.togeojson = {
   testGeojson: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/Naginata.json');
-    var expected = grunt.file.read('test/expected/Naginata.json');
+    var actual = grunt.file.read('tmp/Naginata.json').trim();
+    var expected = grunt.file.read('test/expected/Naginata.json').trim();
     test.equal(actual, expected, 'GeoJSON conversion failed.');
 
     test.done();
@@ -45,8 +45,8 @@ exports.togeojson = {
   testTopojson: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/Naginata.topo');
-    var expected = grunt.file.read('test/expected/Naginata.topo');
+    var actual = grunt.file.read('tmp/Naginata.topo').trim();
+    var expected = grunt.file.read('test/expected/Naginata.topo').trim();
     test.equal(actual, expected, 'TopoJSON conversion failed.');
 
     test.done();
