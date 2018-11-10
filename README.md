@@ -3,8 +3,7 @@
 > Grunt task for converting KML and GPX files to GeoJSON and TopoJSON
 
 [![Build Status](https://img.shields.io/travis/paazmaya/grunt-togeojson.svg?style=flat-square)](https://travis-ci.org/paazmaya/grunt-togeojson)
-[![Code Climate](https://img.shields.io/codeclimate/github/paazmaya/grunt-togeojson.svg?style=flat-square)](https://codeclimate.com/github/paazmaya/grunt-togeojson)
-[![dependencies Status](https://david-dm.org/paazmaya/grunt-togeojson/status.svg)](https://david-dm.org/paazmaya/grunt-togeojson)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3e930f34e451f7729c97/maintainability)](https://codeclimate.com/github/paazmaya/grunt-togeojson/maintainability)[![dependencies Status](https://david-dm.org/paazmaya/grunt-togeojson/status.svg)](https://david-dm.org/paazmaya/grunt-togeojson)
 [![Built with Grunt](http://img.shields.io/badge/Grunt-1.0-blue.svg?style=flat-square)](http://gruntjs.com/)
 [![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-togeojson/index?flat)](https://github.com/igrigorik/ga-beacon)
 
