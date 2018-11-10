@@ -119,9 +119,10 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
-* `v3.0.0` (2018-08-)
+* `v3.0.0` (2018-11-10)
+  - **TopoJSON behaves differently, check your output after updating to this release**
   - Add `options.rename` #9
-  - Several API changes in the updated dependencies have been migrated
+  - Several API changes in the updated dependencies have been migrated, such as JSDOM
   - Minimum Node.js version lifted from `4.2.0` to `8.11.1`
   - `main` property in `package.json` was pointing to a wrong file
   - Migrated from deprecated `togeojson` to `@mapbox/togeojson`, which was merely a package name change
