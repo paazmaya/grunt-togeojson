@@ -45,7 +45,7 @@
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-nodeunit": "^2.0.0",
     "jit-grunt": "^0.10.0",
-    "snyk": "^1.117.1",
+    "snyk": "^1.124.1",
     "time-grunt": "^2.0.0"
   },
   "peerDependencies": {
