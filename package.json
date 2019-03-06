@@ -39,7 +39,7 @@
     "topojson-server": "~3.0.0"
   },
   "devDependencies": {
-    "eslint": "5.10.0",
+    "eslint": "5.15.1",
     "eslint-config-paazmaya": "5.1.0",
     "grunt": "1.0.3",
     "grunt-contrib-clean": "2.0.0",
