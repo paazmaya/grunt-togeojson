@@ -34,18 +34,18 @@
   "dependencies": {
     "@mapbox/togeojson": "~0.16.0",
     "geobuf": "~3.0.1",
-    "jsdom": "~14.0.0",
-    "pbf": "~3.1.0",
+    "jsdom": "~15.0.0",
+    "pbf": "~3.2.0",
     "topojson-server": "~3.0.0"
   },
   "devDependencies": {
-    "eslint": "5.15.3",
-    "eslint-config-paazmaya": "5.2.0",
-    "grunt": "1.0.3",
+    "eslint": "5.16.0",
+    "eslint-config-paazmaya": "5.3.0",
+    "grunt": "^1.0.4",
     "grunt-contrib-clean": "2.0.0",
     "grunt-contrib-nodeunit": "2.0.0",
     "jit-grunt": "0.10.0",
-    "snyk": "1.137.0",
+    "snyk": "1.163.3",
     "time-grunt": "2.0.0"
   },
   "peerDependencies": {
