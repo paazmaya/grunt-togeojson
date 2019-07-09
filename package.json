@@ -29,14 +29,16 @@
     "test": "grunt test",
     "lint": "eslint Gruntfile.js tasks",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@mapbox/togeojson": "~0.16.0",
     "geobuf": "~3.0.1",
     "jsdom": "~15.0.0",
     "pbf": "~3.2.0",
-    "topojson-server": "~3.0.0"
+    "topojson-server": "~3.0.0",
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "eslint": "5.16.0",
@@ -45,7 +47,6 @@
     "grunt-contrib-clean": "2.0.0",
     "grunt-contrib-nodeunit": "2.0.0",
     "jit-grunt": "0.10.0",
-    "snyk": "1.163.3",
     "time-grunt": "2.0.0"
   },
   "peerDependencies": {
