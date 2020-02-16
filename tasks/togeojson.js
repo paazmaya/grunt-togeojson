@@ -6,13 +6,14 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
 
 const togeojson = require('@mapbox/togeojson'),
   topojson = require('topojson-server'),
   Pbf = require('pbf'),
   geobuf = require('geobuf'),
-  JSDOM = require('jsdom').JSDOM;
+  {
+    JSDOM
+  } = require('jsdom');
 
 module.exports = function gruntTogeojson(grunt) {
 
@@ -70,7 +71,9 @@ module.exports = function gruntTogeojson(grunt) {
           data = JSON.stringify(geo, null, '  ');
         }
 
-        let dest = file.dest;
+        let {
+          dest
+        } = file;
 
         if (typeof options.rename === 'function') {
           dest = options.rename(src, dest, options.output);
