@@ -36,7 +36,8 @@
     "geobuf": "~3.0.1",
     "jsdom": "~15.0.0",
     "pbf": "~3.2.0",
-    "topojson-server": "~3.0.0"
+    "topojson-server": "~3.0.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "eslint": "5.16.0",
@@ -45,7 +46,6 @@
     "grunt-contrib-clean": "2.0.0",
     "grunt-contrib-nodeunit": "2.0.0",
     "jit-grunt": "0.10.0",
-    "snyk": "^1.228.3",
     "time-grunt": "2.0.0"
   },
   "peerDependencies": {
