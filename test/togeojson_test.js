@@ -35,8 +35,8 @@ exports.togeojson = {
   testGeojson: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/Naginata.json').trim();
-    var expected = grunt.file.read('test/expected/Naginata.json').trim();
+    const actual = grunt.file.read('tmp/Naginata.json').trim();
+    const expected = grunt.file.read('test/expected/Naginata.json').trim();
     test.equal(actual, expected, 'GeoJSON conversion failed.');
 
     test.done();
@@ -45,8 +45,8 @@ exports.togeojson = {
   testTopojson: function(test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/Naginata.topo').trim();
-    var expected = grunt.file.read('test/expected/Naginata.topo').trim();
+    const actual = grunt.file.read('tmp/Naginata.topo').trim();
+    const expected = grunt.file.read('test/expected/Naginata.topo').trim();
     test.equal(actual, expected, 'TopoJSON conversion failed.');
 
     test.done();
@@ -55,9 +55,8 @@ exports.togeojson = {
   testGeobuf: function(test) {
     test.expect(1);
 
-    var actual = fs.readFileSync('tmp/Naginata.geobuf', null);
-    var expected = fs.readFileSync('test/expected/Naginata.geobuf', null);
-    test.equal(actual.length, expected.length, 'Geobuf/GeoJSON conversion failed.');
+    const actual = fs.readFileSync('tmp/Naginata.geobuf', null);
+    test.equal(actual.length, 615, 'Geobuf/GeoJSON conversion failed.');
 
     test.done();
   }
