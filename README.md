@@ -121,7 +121,7 @@ There should be no errors appearing after any JavaScript file changes.
 * `v4.0.0` (2020-05-28)
   - Minimum Node.js version lifted from `8.11.1` to `10.13.0`
   - Dependencies updated of course :tophat:
-  - Run tests with versions 8, 10, 12, and 14 of Node.js at Travis CI
+  - Run tests with versions 10, 12, and 14 of Node.js at Travis CI
 * `v3.0.0` (2018-11-10)
   - **TopoJSON behaves differently, check your output after updating to this release**
   - Add `options.rename` #9

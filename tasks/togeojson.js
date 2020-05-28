@@ -47,7 +47,7 @@ module.exports = function gruntTogeojson(grunt) {
         }
 
         const original = grunt.file.read(src),
-          dom = (new JSDOM(original)).window.document;
+          dom = new JSDOM(original).window.document;
 
         let geo = togeojson[method](dom);
 
