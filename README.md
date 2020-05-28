@@ -3,9 +3,9 @@
 > Grunt task for converting KML and GPX files to GeoJSON and TopoJSON
 
 [![Build Status](https://img.shields.io/travis/paazmaya/grunt-togeojson.svg?style=flat-square)](https://travis-ci.org/paazmaya/grunt-togeojson)
-[![Maintainability](https://api.codeclimate.com/v1/badges/3e930f34e451f7729c97/maintainability)](https://codeclimate.com/github/paazmaya/grunt-togeojson/maintainability)[![dependencies Status](https://david-dm.org/paazmaya/grunt-togeojson/status.svg)](https://david-dm.org/paazmaya/grunt-togeojson)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3e930f34e451f7729c97/maintainability)](https://codeclimate.com/github/paazmaya/grunt-togeojson/maintainability)
+[![dependencies Status](https://david-dm.org/paazmaya/grunt-togeojson/status.svg)](https://david-dm.org/paazmaya/grunt-togeojson)
 [![Built with Grunt](http://img.shields.io/badge/Grunt-1.0-blue.svg?style=flat-square)](http://gruntjs.com/)
-[![Analytics](https://ga-beacon.appspot.com/UA-2643697-15/grunt-togeojson/index?flat)](https://github.com/igrigorik/ga-beacon)
 
 ## Getting Started
 
@@ -15,8 +15,8 @@ This Grunt task runner plugin uses [Grunt](http://gruntjs.com/),
 [Geobuf](https://github.com/mapbox/geobuf),
 and [jsdom](https://github.com/tmpvar/jsdom).
 
-Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule),
-starting from the release `3.0.0` of this plugin.
+Please note that the minimum version of [Node.js](https://nodejs.org/en/) required is `10.13.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule),
+starting from the release `4.0.0` of this plugin.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to
 check out the [Getting Started](http://gruntjs.com/getting-started)
@@ -118,6 +118,10 @@ There should be no errors appearing after any JavaScript file changes.
 
 ## Release History
 
+* `v4.0.0` (2020-05-28)
+  - Minimum Node.js version lifted from `8.11.1` to `10.13.0`
+  - Dependencies updated of course :tophat:
+  - Run tests with versions 8, 10, 12, and 14 of Node.js at Travis CI
 * `v3.0.0` (2018-11-10)
   - **TopoJSON behaves differently, check your output after updating to this release**
   - Add `options.rename` #9
