@@ -37,7 +37,7 @@
     "jsdom": "~16.2.2",
     "pbf": "~3.2.1",
     "topojson-server": "~3.0.1",
-    "snyk": "^1.332.0"
+    "snyk": "^1.425.4"
   },
   "devDependencies": {
     "eslint": "7.1.0",
