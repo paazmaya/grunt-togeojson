@@ -27,17 +27,14 @@
   },
   "scripts": {
     "test": "grunt test",
-    "lint": "eslint Gruntfile.js tasks",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "lint": "eslint Gruntfile.js tasks"
   },
   "dependencies": {
     "@mapbox/togeojson": "~0.16.0",
     "geobuf": "~3.0.1",
     "jsdom": "~16.2.2",
     "pbf": "~3.2.1",
-    "topojson-server": "~3.0.1",
-    "snyk": "^1.425.4"
+    "topojson-server": "~3.0.1"
   },
   "devDependencies": {
     "eslint": "7.1.0",
@@ -66,6 +63,5 @@
     "transform",
     "compress",
     "maps"
-  ],
-  "snyk": true
+  ]
 }
