@@ -7,7 +7,6 @@
  */
 
 
-
 const fs = require('fs'),
   grunt = require('grunt');
 
