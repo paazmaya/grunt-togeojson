@@ -4,7 +4,7 @@
 
 [![Build Status](https://img.shields.io/travis/paazmaya/grunt-togeojson.svg?style=flat-square)](https://app.travis-ci.com/paazmaya/grunt-togeojson)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3e930f34e451f7729c97/maintainability)](https://codeclimate.com/github/paazmaya/grunt-togeojson/maintainability)
-[![dependencies Status](https://david-dm.org/paazmaya/grunt-togeojson/status.svg)](https://david-dm.org/paazmaya/grunt-togeojson)
+
 [![Built with Grunt](http://img.shields.io/badge/Grunt-1.0-blue.svg?style=flat-square)](http://gruntjs.com/)
 
 ## Getting Started
