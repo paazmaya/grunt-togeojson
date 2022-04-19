@@ -30,23 +30,23 @@
     "lint": "eslint Gruntfile.js tasks"
   },
   "dependencies": {
-    "@mapbox/togeojson": "~0.16.0",
-    "geobuf": "~3.0.2",
-    "jsdom": "~16.7.0",
-    "pbf": "~3.2.1",
-    "topojson-server": "~3.0.1"
+    "@mapbox/togeojson": "0.16.0",
+    "geobuf": "3.0.2",
+    "jsdom": "16.7.0",
+    "pbf": "3.2.1",
+    "topojson-server": "3.0.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-paazmaya": "7.2.0",
     "grunt": "1.5.2",
-    "grunt-contrib-clean": "2.0.0",
+    "grunt-contrib-clean": "2.0.1",
     "grunt-contrib-nodeunit": "2.1.0",
     "jit-grunt": "0.10.0",
     "time-grunt": "2.0.0"
   },
   "peerDependencies": {
-    "grunt": "~1.1"
+    "grunt": "^1.1.0"
   },
   "keywords": [
     "gruntplugin",
